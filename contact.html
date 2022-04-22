@@ -8,7 +8,7 @@
     <link rel="icon" href="img/logo/logos.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://use.fontawesome.com/8426f92f9e.js"></script>
 
     <style>
@@ -26,6 +26,21 @@
             align-self: center;
             padding: 50px;
         }
+        form {
+    background: rgb(243, 178, 178);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+textarea {
+  border-radius: 6px;
+  outline: none;
+  display:flex;
+  border:0;
+}
 
 
     </style>
@@ -63,40 +78,50 @@
       </div>
     </nav>
 
-        <section id="featured" class="my-5 py-4">
+        <section id="featured" class="mt-5 pt-4">
             <div class="container text-left mt-5 py-2" >
                 <h2 class="font-weight-bold">Contact us</h2>
                 <hr>
                 <p>In the late 1980s, Larry and Carol Umbarger began growing flowers,<br> and then ornamental and culinary herbs to help with college expenses for their 2 older children.<br> This led to discovering a market for California Pepper berries,<br> which ultimately led to a connection with Smith and Hawken, <br> an upscale retailer of home and garden products. <br> Smith and Hawken had a vendor who needed help meeting a deadline for their company.<br> So the Umbargers dove right in, <br>and that weekend learned how to make a wreath. <br>They spent the next 3 weeks making 3,000 wreaths in their playroom.</p>
             </div>
-            <form class="container ">
-                <hr class="my-4">
-                <div class="col-lg-7 col-md-6 col-12">
-                  <label for="fname" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="fname" name="fname" placeholder="john">
-                </div>
-                <div class="col-lg-7 col-md-6 col-12">
-                  <label for="lname" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="lname" placeholder="smith">
-                </div>
-                <div class="col-lg-7 col-md-6 col-12">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-                </div>
-                <div class="col-lg-7 col-md-6 col-12">
-                  <label for="phone" class="form-label">phone</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="(210)-111-2222">
-                </div>
-                </div>
-                <div class="col-12 mt-4">
-                  <button>Submit</button>
-
-                </div>
-              </form>
           </section>
-        
-    </section> 
+          
+        <section>
+          <div>
+            <form class="container " action="https://formsubmit.co/ecanunkor@gmail.com" method="POST">
+              <hr class="my-4">
+              <div class="col-lg-7 col-md-6 col-12">
+                <label for="name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="fname" name="name" placeholder="john" required>
+              </div>
+              <div class="col-lg-7 col-md-6 col-12">
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="smith" required>
+              </div>
+              <div class="col-lg-7 col-md-6 col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+              </div>
+              <div class="col-lg-7 col-md-6 col-12">
+                <label for="phone" class="form-label">phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="(210)-111-2222" required>
+                
+                <label for="Subject" class="form-label mt-4">Subject</label>
+                <textarea class="col-lg-12 col-md-6 col-12" name="" id="message" rows="5" placeholder="   Enter your Enquiry!"></textarea>
 
+                <button type="submit" class="center col-3 mt-5">Send</button>
+              </div>
+
+              <!-- message has been sent-->
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+              <input type="hidden" name="_subject" value="New submission!">
+               <!--block spammers-->
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+            </form>
+          </div>
+        </section>
     <footer class="mt-5 py-5">
       <div class="row container mx-auto pt-5">   <!-- get rid of scroll bar -->
           <div class="fotter-one col-lg-3 col-md-6 col-12">

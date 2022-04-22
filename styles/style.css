@@ -34,7 +34,7 @@ h5 {
     color: #1d1d1d;
 }
 h6 {
-    color: #D8D8D8;
+    color: #121111;
 }
 button {
     font-size: 0.8rem;
@@ -75,6 +75,7 @@ hr {
     box-shadow: 0 5px 10px rgba( 0,0,0,0.6)
 }
 
+
 .navbar-light .navbar-nav .nav-link {
 
     padding: 0 20px;
@@ -86,7 +87,7 @@ hr {
 
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar i.active {
-    color: coral;
+    color: rgb(243, 178, 178);
 }
 
 .navbar i {
@@ -245,7 +246,7 @@ hr {
 
 }
 #banner {
-    background-image: url("img/background.jpg");
+    background-image: url("/img/background.jpg");
     width: 100%;
     height: 70vh;
     background-size: cover;
@@ -265,17 +266,17 @@ hr {
     color:#fff;
 }
 #banner button {
-    background-color:#fb774b;
+    background-color:rgb(243, 178, 178);;
 }
 #banner button:hover {
     background-color:#504d4c;
 }
 footer {
-    background-color:#1d1d1d;
+    background-color: white;
 }
 
 footer h5{
-    color:#D8D8D8;
+    color:#121111;
     font-weight:700;
     font-size: 1.2rem;
 }
@@ -286,15 +287,15 @@ footer li{
 
 footer li a{
     font-size: 0.8rem;
-    color: #999;
+    color: rgb(28, 27, 27);
 
 }
 footer li a:hover{
-    color: #D8D8D8;
+    color: rgb(243, 178, 178);
     
 }
 footer p {
-    color: #999;
+    color: rgb(12, 12, 12);
     font-size: 0.8rem;
     
 }
@@ -323,3 +324,8 @@ footer .copyright a:hover {
     width: 50px;
     height:50px;            
 }
+.bannerfiller {
+    width:50%;
+    height: 50px;
+}
+
